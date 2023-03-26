@@ -70,28 +70,27 @@ int print_unsgined_number(unsigned int n)
  */
 int print_Binary(va_list list)
 {
-    unsigned int num;
-	int i=0; 
+	unsigned int num;
+	int i = 0;
 	int bit;
 	int count = 0;
+
 	num = va_arg(list, unsigned int);
-    
-
-    if (num == 0) {
-        _printf("0");
-        return (1);
-    }
-
-    while ((num >> count) > 0) {
-        count++;
-    }
-
-    for (i = count - 1; i >= 0; i--) {
-        bit = (num >> i) & 1;
-        _printf("%d", bit);
-    }
-
-    return (count);
+	if (num == 0)
+	{
+		_printf("0");
+		return (1);
+	}
+	while ((num >> count) > 0)
+	{
+		count++;
+	}
+	for (i = count - 1; i >= 0; i--)
+	{
+		bit = (num >> i) & 1;
+		_printf("%d", bit);
+	}
+	return (count);
 }
 
 /**
