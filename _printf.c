@@ -7,7 +7,7 @@
  * Return: A total count of the characters printed
  */
 int _printf(const char *format, ...)
-{ 
+{
 	int printed_chars;
 	conver_t f_list[] = {
 		{"c", print_char},
