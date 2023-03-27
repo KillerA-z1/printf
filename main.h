@@ -31,6 +31,6 @@ int print_integer(va_list);
 int print_number(va_list);
 int print_unsgined_number(unsigned int);
 int print_Binary(va_list);
-
+int rot13(va_list list);
 
 #endif
