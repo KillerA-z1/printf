@@ -47,3 +47,31 @@ int print_percent(__attribute__((unused))va_list list)
 	_write_char('%');
 	return (1);
 }
+
+/**
+ * print_reversed - prints a string in reverse
+ * @arg: argument list containing a char pointer to the string
+ *
+ * Return: the length of the string, or -1 on failure
+*/
+
+	int print_reversed(va_list arg)
+{
+	char *str;
+	int len = 0;
+	int i;
+
+	str = va_arg(arg, char *);
+
+	if (str == NULL)
+		return (-1);
+
+	while (str[len])
+		len++;
+
+	for (i = len - 1; i >= 0; i--)
+		_write_char(str[i]);
+
+	return (len);
+}
+

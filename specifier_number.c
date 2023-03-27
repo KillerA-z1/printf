@@ -64,33 +64,41 @@ int print_unsgined_number(unsigned int n)
 	return (len);
 }
 /**
- * print_Binary - prints a binary representation of an integer
- * @list: argument list containing the integer to be printed
- * Return: the number of digits printed
+ * print_binary - Prints a number in binary format
+ * @list: A list of arguments containing the number to print
+ *
+ * Return: The number of digits printed
  */
 int print_Binary(va_list list)
 {
 	unsigned int num;
-	int i = 0;
-	int bit;
-	int count = 0;
+	unsigned int tmp;
+
+	int i;
+	int len = 0;
 
 	num = va_arg(list, unsigned int);
+
 	if (num == 0)
+		return (_write_char('0'));
+
+	tmp = num;
+
+	while (tmp > 0)
 	{
-		_printf("0");
-		return (1);
+		tmp >>= 1;
+		len++;
 	}
-	while ((num >> count) > 0)
+
+	for (i = len - 1; i >= 0; i--)
 	{
-		count++;
+	if ((num >> i) & 1)
+		_write_char('1');
+	else
+		_write_char('0');
 	}
-	for (i = count - 1; i >= 0; i--)
-	{
-		bit = (num >> i) & 1;
-		_printf("%d", bit);
-	}
-	return (count);
+
+	return (len);
 }
 
 /**
