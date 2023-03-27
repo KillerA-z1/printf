@@ -31,17 +31,17 @@ int print_integer(va_list);
 int print_number(va_list);
 int print_unsgined_number(unsigned int);
 int print_Binary(va_list);
-int rot13(va_list list);
+int rot13(va_list);
 int print_reversed(va_list arg);
 int print_octal(va_list list);
 int print_hex(va_list list);
 int print_heX(va_list list);
 int hex_check(int num, char x);
-
+int unsigned_integer(va_list list);
 
 /*Helper functions*/
-char *rev_string(char *s);
-unsigned int base_len(unsigned int num, int base);
+char *rev_string(char *);
+unsigned int base_len(unsigned int, int);
 char *_memcpy(char *dest, char *src, unsigned int n);
 void write_base(char *str);
 
