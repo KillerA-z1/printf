@@ -31,10 +31,7 @@ int print_integer(va_list);
 int print_number(va_list);
 int print_unsgined_number(unsigned int);
 int print_Binary(va_list);
-<<<<<<< HEAD
 int rot13(va_list list);
-=======
 int print_reversed(va_list arg);
->>>>>>> f3e1e7fa9761432b4fb34c8055ced97230f937b1
 
 #endif

@@ -18,11 +18,8 @@ int _printf(const char *format, ...)
 		{"d", print_integer},
 		{"i", print_integer},
 		{"b", print_Binary},
-<<<<<<< HEAD
-		 {"R", rot13},
-=======
+		{"R", rot13},
 		{"r", print_reversed},
->>>>>>> f3e1e7fa9761432b4fb34c8055ced97230f937b1
 		{NULL, NULL}
 	};
 
