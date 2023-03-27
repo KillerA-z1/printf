@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _printf(const char *format, ...);
+
 /**
  * _printf - Receives the main string and all the necessary parameters to
  * print a formated string
@@ -16,6 +18,7 @@ int _printf(const char *format, ...)
 		{"d", print_integer},
 		{"i", print_integer},
 		{"b", print_Binary},
+		 {"R", rot13},
 		{NULL, NULL}
 	};
 
