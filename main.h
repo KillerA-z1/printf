@@ -38,6 +38,7 @@ int print_hex(va_list list);
 int print_heX(va_list list);
 int hex_check(int num, char x);
 int unsigned_integer(va_list list);
+int _print_string(va_list list);
 
 /*Helper functions*/
 char *rev_string(char *);
