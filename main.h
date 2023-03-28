@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <stdio.h>
 /**
  * struct convert - defines sructure for pointer charater and function.
  * @sym: pointer to char
