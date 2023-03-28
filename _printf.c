@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		{"r", print_reversed},
 		{"u", unsigned_integer},
 		{"o", print_octal},
+		{"p", print_pointer},
 		{"x", print_hex},
 		{"X", print_heX},
 		{NULL, NULL}

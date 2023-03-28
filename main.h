@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
-
+#include <stdio.h>
 /**
  * struct convert - defines sructure for pointer charater and function.
  * @sym: pointer to char
@@ -39,6 +39,7 @@ int print_heX(va_list list);
 int hex_check(int num, char x);
 int unsigned_integer(va_list list);
 int _print_string(va_list list);
+int print_pointer(va_list arg_list);
 
 /*Helper functions*/
 char *rev_string(char *);
